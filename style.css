@@ -19,66 +19,68 @@ body {
     left: 0;
     width: 100%;
     z-index: 50;
-    padding-top: 14px;                 /* top spacing like Figma */
+    padding-top: 22px;     /* 🔥 Increased top gap for Figma look */
 }
 
-/* Dark transparent strip behind navbar (full width) */
+/* dark strip behind navbar */
 .site-header::before {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    height: 75px;                      /* height same as Figma */
-    background: rgba(27, 31, 41, 0.96);
-    backdrop-filter: blur(35px);
+    height: 85px;          /* 🔥 Increased height to match Figma */
+    background: rgba(27, 31, 41, 0.95);
+    backdrop-filter: blur(40px);
     z-index: -1;
 }
 
-/* Centered nav box */
+/* CENTER NAV CONTAINER */
 .nav-shell {
     position: relative;
-    max-width: 700px;                  /* matches Figma's compact nav */
-    margin: 0 auto;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;     /* 🔥 This centers the navbar */
     padding: 12px 28px;
-    background: rgba(50, 56, 68, 0.67); /* grey pill shape behind links */
+    background: rgba(50, 56, 68, 0.65);
     border-radius: 8px;
-}
 
-/* Nav Links container */
-.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    gap: 34px;                         /* spacing between menu items */
-    margin: 0;
-    padding: 0;
 }
 
-/* Normal links */
+/* Nav links */
+.nav-links {
+    display: flex;
+    gap: 34px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .nav-link {
     color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-size: 15px;
-    line-height: 22px;
+    text-decoration: none;
     padding: 8px 0;
-    display: inline-block;
-    transition: 0.25s ease;
+    transition: 0.2s;
 }
 
-/* Hover effect */
-.nav-link:hover {
-    opacity: 0.8;
-}
-
-/* Active – Grey pill box exactly like Figma */
 .nav-link.active {
     background: #515B67;
     padding: 10px 18px;
     border-radius: 7px;
-    font-weight: 400;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Prevent content from hiding under navbar */
+body {
+    padding-top: 140px;     /* 🔥 Now content starts below navbar */
 }
 
 /* ==================== HERO SECTION ==================== */
@@ -423,5 +425,6 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
+
 
 

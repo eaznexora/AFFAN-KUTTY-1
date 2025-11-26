@@ -316,10 +316,10 @@ body {
 
 /* MIDDLE COLUMNS */
 .footer-main {
-    display: flex;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: 200px 250px 200px 1fr;
+    column-gap: 80px;
     align-items: flex-start;
-    justify-content: flex-start;
 }
 
 .footer-col h3 {
@@ -371,10 +371,10 @@ body {
     font-size: 12px;
 }
 
-.social-row {
-    display: flex;
-    gap: 10px;
-    margin-top: 6px;
+.social-row img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
 }
 
 .social-row img {
@@ -390,3 +390,4 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
+

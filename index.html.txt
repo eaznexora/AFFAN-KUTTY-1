@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Master Affan Kutty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="nav-blur"></div>
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li class="active">Home</li>
+                <li>About Affan</li>
+                <li>Achievements</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="color-bars">
+                <div class="bar yellow"></div>
+                <div class="bar green"></div>
+                <div class="bar red"></div>
+            </div>
+
+            <h1 class="hero-title">INDIA’S LEADING RUBIK’S CUBE PERFORMER</h1>
+            <p class="hero-sub">Guinness World Record holder known for transforming simple cubes into unforgettable art.</p>
+
+            <div class="hero-highlights">
+                <div class="highlight-box">
+                    <img src="icons/award.svg" class="icon">
+                    <p>Multiple Record Titles earned through years of dedicated practice</p>
+                </div>
+
+                <div class="highlight-box">
+                    <img src="icons/cube.svg" class="icon">
+                    <p>Expert in Blindfold Solving & Speed Cubing</p>
+                </div>
+
+                <div class="highlight-box">
+                    <img src="icons/lecture.svg" class="icon">
+                    <p>Conducted Workshops for 50+ Schools & Institutions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="AffanKuttyHero.png" class="hero-img">
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about">
+        <h2>About Grand Master Affan Kutty</h2>
+
+        <div class="about-wrapper">
+            <p class="about-text">
+                From the busy lanes of Mumbra, Thane, Affan Kutty turned his passion for the classic cube into a spectacular journey...
+            </p>
+
+            <img src="Affan-on-chair.png" class="about-img">
+        </div>
+
+        <div class="record-boxes">
+            <div class="record-card">
+                <h3>Limca Book Of Records</h3>
+                <p>Honored for setting a national-level cubing milestone.</p>
+            </div>
+
+            <div class="record-card">
+                <h3>Limca Book Of Records</h3>
+                <p>Honored for setting a national-level cubing milestone.</p>
+            </div>
+
+            <div class="record-card">
+                <h3>Limca Book Of Records</h3>
+                <p>Honored for setting a national-level cubing milestone.</p>
+            </div>
+
+            <div class="record-card">
+                <h3>Limca Book Of Records</h3>
+                <p>Honored for setting a national-level cubing milestone.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================= MOMENTS SECTION ================= -->
+    <section class="moments">
+        <h2>Moments That Made The Record</h2>
+        <p class="moment-sub">Where every captured second reflects the hard work, focus, and brilliance behind the records.</p>
+
+        <div class="moment-cards">
+            <div class="moment-card">
+                <img src="img1.jpg">
+                <p>A memorable moment that reflects honor, achievement, and dedication.</p>
+            </div>
+
+            <div class="moment-card">
+                <img src="img2.jpg">
+                <p>A memorable moment that reflects honor, achievement, and dedication.</p>
+            </div>
+
+            <div class="moment-card">
+                <img src="img3.jpg">
+                <p>A memorable moment that reflects honor, achievement, and dedication.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= QUOTE SECTION ================= -->
+    <section class="quote-box">
+        <img src="testimonial-profile.jpg" class="quote-img">
+        <p class="quote-text">
+            "Affan’s discipline, precision, and consistency at such a young age is truly commendable.
+             Young talents like him set an example for the nation."
+        </p>
+        <p class="quote-author">— Ameen Sarguroh</p>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+        <p>Bring the Magic of Speedcubing to Your Stage</p>
+        <button class="cta-btn">Request a Guest Appearance</button>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-section about-footer">
+            <h4>About</h4>
+            <p>About Affan</p>
+            <p>Achievements</p>
+            <p>Gallery</p>
+        </div>
+
+        <div class="footer-section services">
+            <h4>Shows & Services</h4>
+            <p>Stage Performance</p>
+            <p>Workshops</p>
+            <p>School events</p>
+            <p>Lectures</p>
+        </div>
+
+        <div class="footer-section quick">
+            <h4>Quick Links</h4>
+            <p>FAQs</p>
+            <p>Media Kit</p>
+            <p>Press & News</p>
+            <p>Merches</p>
+        </div>
+
+        <div class="footer-section contact">
+            <h4>Contact</h4>
+            <p>info@affankutty.com</p>
+            <p>connect@affankutty.com</p>
+            <p>+91 99675 89330</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>©2025 Grand Master Affan Kutty. All Rights Reserved</p>
+            <p>Designed & Developed by Eaz Nexora</p>
+        </div>
+    </footer>
+
+</body>
+</html>

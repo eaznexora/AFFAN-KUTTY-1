@@ -317,7 +317,7 @@ body {
 /* MIDDLE COLUMNS */
 .footer-main {
     display: grid;
-    grid-template-columns: 200px 250px 200px 1fr;
+    grid-template-columns: 200px 250px 200px 1fr; /* Contact right side */
     column-gap: 80px;
     align-items: flex-start;
 }
@@ -342,6 +342,10 @@ body {
 }
 
 /* CONTACT COLUMN */
+.footer-contact {
+    text-align: left;
+}
+
 .footer-contact .contact-line {
     display: flex;
     align-items: center;
@@ -371,15 +375,17 @@ body {
     font-size: 12px;
 }
 
-.social-row img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
+/* SOCIAL ICON ROW */
+.social-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
 }
 
 .social-row img {
     width: 24px;
     height: 24px;
+    object-fit: contain;
 }
 
 /* BOTTOM BAR */
@@ -390,4 +396,3 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
-

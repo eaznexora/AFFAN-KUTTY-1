@@ -13,74 +13,80 @@ body {
 
 /* ==================== HEADER / NAVBAR ==================== */
 
+/* outer fixed header */
 .site-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 50;
-    padding-top: 22px;     /* 🔥 Increased top gap for Figma look */
-}
-
-/* dark strip behind navbar */
-.site-header::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 85px;          /* 🔥 Increased height to match Figma */
-    background: rgba(27, 31, 41, 0.95);
-    backdrop-filter: blur(40px);
-    z-index: -1;
-}
-
-/* CENTER NAV CONTAINER */
-.nav-shell {
-    position: relative;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;     /* 🔥 This centers the navbar */
-    padding: 12px 28px;
-    background: rgba(50, 56, 68, 0.65);
-    border-radius: 8px;
-
     display: flex;
     justify-content: center;
-    align-items: center;
+    background: transparent;
 }
 
-/* Nav links */
+/* Frame 7 – big rounded bar */
+.nav-frame {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1391px;             /* Figma width */
+    height: 75px;                  /* Figma height */
+    margin: 0 auto;
+    background: rgba(50, 56, 68, 0.61);
+    backdrop-filter: blur(110.35px);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Frame 12 – links row */
+.nav-shell {
+    width: 514px;                  /* Figma width */
+    height: 43px;                  /* Figma height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* UL */
 .nav-links {
     display: flex;
-    gap: 34px;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
+/* anchors */
 .nav-link {
-    color: #FFFFFF;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 8px 0;
-    transition: 0.2s;
+    display: inline-block;
+    transition: 0.2s ease;
 }
 
+/* active tab */
 .nav-link.active {
     background: #515B67;
     padding: 10px 18px;
     border-radius: 7px;
 }
 
+/* hover */
 .nav-link:hover {
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
-/* Prevent content from hiding under navbar */
+/* content ko header ke neeche push karo */
 body {
-    padding-top: 140px;     /* 🔥 Now content starts below navbar */
+    padding-top: 95px;   /* 75px bar + thoda gap, adjust if needed */
 }
 
 /* ==================== HERO SECTION ==================== */
@@ -425,6 +431,7 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
+
 
 
 
